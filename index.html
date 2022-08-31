@@ -89,19 +89,19 @@
         <div class="row">
           <div class="col-lg-4 col-sm-6 mb-4">
             <!-- 15 años-->
-            <div class="portfolio-item">
+            <div class="services-item">
                 <img class="img-fluid" src="assets/img/15.jpg" alt="15 años"/>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mb-4">
             <!-- Bodas-->
-            <div class="portfolio-item">
+            <div class="services-item">
               <img class="img-fluid" src="assets/img/bodas.jpg" alt="bodas"/>  
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mb-4">
             <!-- Corporativos-->
-            <div class="portfolio-item">
+            <div class="services-item">
                 <img class="img-fluid" src="assets/img/empresas.jpg" alt="empresas"/>
               </div>
             </div>
@@ -121,11 +121,16 @@
         <div class="row">
           <div class="col-lg-4 col-sm-6 mb-4">
             <!--Espejo Magico-->
-            <div class="portfolio-item">
+            <div class="services-item">
+              <a class="services-link" data-bs-toggle="modal" href="#servicesModal1">
+                <div class="services-hover">
+                  <div class="services-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                </div>
                 <img class="img-fluid" src="assets/img/services.jpg" alt="espejo magico"/>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Espejo Mágico</div>
-                <div class="portfolio-caption-subheading text-muted">
+              </a>
+                <div class="services-caption">
+                  <div class="services-caption-heading">Espejo Mágico</div>
+                  <div class="services-caption-subheading text-muted">
                   El Espejo Mágico SelfieCam es único en su estética debido a su estructura de madera que brinda calidez al ambiente. Con una pantalla táctil de 55" se destaca en tu fiesta captando la atención de los invitados y proporciona momentos únicos que quedan impresos en instantáneas de alta calidad.
                 </div>
               </div>
@@ -133,11 +138,16 @@
           </div>
           <div class="col-lg-4 col-sm-6 mb-4">
             <!-- Totem fotografico -->
-            <div class="portfolio-item">
+            <div class="services-item">
+              <a class="services-link" data-bs-toggle="modal" href="#servicesModal2">
+                <div class="services-hover">
+                  <div class="services-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                </div>
                 <img class="img-fluid" src="assets/img/services_2.jpg" alt="totem fotografico"/>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Totem Fotográfico</div>
-                <div class="portfolio-caption-subheading text-muted">
+              </a>
+              <div class="services-caption">
+                <div class="services-caption-heading">Totem Fotográfico</div>
+                <div class="services-caption-subheading text-muted">
                   Brindale a tus invitados una experiencia diferente con el Tótem Fotográfico SelfieCam y obtendrás instantáneas de alta calidad en el momento. Lo que hacemos es montar un pequeño estudio de fotografía en tu fiesta para que puedan retratarse frente a la cámara y llevarse un recuerdo único. Una vez terminada la sesión los invitados podrán ingresar su E-mail en la pantalla y tener sus fotos digitales en el acto, por supuesto también se las llevarán impresas.
                 </div>
               </div>
@@ -145,11 +155,16 @@
           </div>
           <div class="col-lg-4 col-sm-6 mb-4">
             <!-- plataforma 360-->
-            <div class="portfolio-item">
-              <img class="img-fluid" src="assets/img/services_3.jpg" alt="base 360"/>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Plataforma 360</div>
-                <div class="portfolio-caption-subheading text-muted">
+            <div class="services-item">
+              <a class="services-link" data-bs-toggle="modal" href="#servicesModal3">
+                <div class="services-hover">
+                  <div class="services-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                </div>
+                <img class="img-fluid" src="assets/img/services_3.jpg" alt="base 360"/>
+              </a>
+              <div class="services-caption">
+                <div class="services-caption-heading">Plataforma 360</div>
+                <div class="services-caption-subheading text-muted">
                   El funcionamiento es una cámara montada sobre una plataforma redonda que gira alrededor de los invitados y filma un video en 360 grados. Luego, los videos se editan automáticamente en 30 segundos agregando música y efectos (Cámara lenta, cámara rápida y boomerang). Una vez finalizada la edición los usuarios pueden acceder de manera instantánea al material mediante un código QR que escanean con sus smartphones.
                 </div>
               </div>
@@ -239,7 +254,7 @@
                   data-sb-validations="required"
                 />
                 <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
+                  Se requiere un Nombre.
                 </div>
               </div>
               <div class="form-group">
@@ -252,10 +267,10 @@
                   data-sb-validations="required,email"
                 />
                 <div class="invalid-feedback" data-sb-feedback="email:required">
-                  An email is required.
+                  Se requiere un email.
                 </div>
                 <div class="invalid-feedback" data-sb-feedback="email:email">
-                  Email is not valid.
+                  Email no valido.
                 </div>
               </div>
               <div class="form-group mb-md-0">
@@ -268,7 +283,7 @@
                   data-sb-validations="required"
                 />
                 <div class="invalid-feedback" data-sb-feedback="phone:required">
-                  A phone number is required.
+                  Se requiere un número telefónico.
                 </div>
               </div>
             </div>
@@ -285,7 +300,7 @@
                   class="invalid-feedback"
                   data-sb-feedback="message:required"
                 >
-                  A message is required.
+                  Debe completar este campo.
                 </div>
               </div>
             </div>
@@ -296,7 +311,7 @@
           <!-- has successfully submitted-->
           <div class="d-none" id="submitSuccessMessage">
             <div class="text-center text-white mb-3">
-              <div class="fw-bolder">Form submission successful!</div>
+              <div class="fw-bolder">El mensaje fue enviado con éxito</div>
               To activate this form, sign up at
               <br />
               <a href="https://startbootstrap.com/solution/contact-forms"
@@ -310,7 +325,7 @@
           <!-- an error submitting the form-->
           <div class="d-none" id="submitErrorMessage">
             <div class="text-center text-danger mb-3">
-              Error sending message!
+              Error den envío!
             </div>
           </div>
           <!-- Submit Button-->
@@ -355,13 +370,108 @@
           </div>
           <div class="col-lg-4 text-lg-end">
             <a class="link-dark text-decoration-none me-3" href="#!"
-              >Privacy Policy</a
+              >Políticas de privacidad</a
             >
-            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+            <a class="link-dark text-decoration-none" href="#!">Terminos de uso</a>
           </div>
         </div>
       </div>
     </footer>
+    <!-- services Modals-->
+        <!-- services item 1 modal popup-->
+        <div class="services-modal modal fade" id="servicesModal1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <div class="modal-body">
+                                  <!-- Project details-->
+                                  <h2 class="text-uppercase">espejo mágico</h2>
+                                  <img class="img-fluid d-block mx-auto" src="assets/img/espejo-modal.jpg" alt="..." />
+                                  <p>Espejo Mágico Córdoba es la última innovación en tecnología, si estás por celebrar cualquier evento o fecha importante y quieres resaltar en las ideas innovadoras que te trae el espejo mágico, esta es la forma más indicada para que tus invitados disfruten al máximo el evento. Esta tecnología es conocida en algunos países como fotografía interactiva, en la que tus invitados tienen la oportunidad de ver imágenes coloridas y divertidas a través de una pantalla táctil que te hará sentir como si estuvieras en un cuento de hadas. El Espejo Mágico Córdoba es un elemento que puedes usar para darle un toque chic y divertido a tu fiesta, mientras generas un souvenir para que tus invitados nunca olviden de tu evento.</p>
+                                  <ul class="list-inline">
+                                      <li>
+                                          <strong>El servicio incluye:</strong>
+                                          2 hs. de servicio - Sesiones ilimitadas - Cotillón divertido y variado - Tamaño de foto 15x21 - Traslado del espejo - Firma digital de las fotos - Fotos profesionales
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                      <i class="fas fa-xmark me-1"></i>
+                                      cerrar
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- services item 2 modal popup-->
+      <div class="services-modal modal fade" id="servicesModal2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <div class="modal-body">
+                                  <!-- Project details-->
+                                  <h2 class="text-uppercase">totem fotográfico</h2>
+                                  <img class="img-fluid d-block mx-auto" src="assets/img/totem-modal.jpg" alt="..." />
+                                  <p>Tótem fotográfico Córdoba SelfieCam brinda a tus invitados una experiencia diferente obteniendo instantáneas de alta calidad en el momento. Lo que hacemos es montar un pequeño estudio de fotografía en tu fiesta para que puedan retratarse frente a la cámara y llevarse un recuerdo único. Una vez terminada la sesión los invitados podrán ingresar su E-mail en la pantalla táctil y tener sus fotos digitales en el acto, por supuesto también se las llevarán impresas en tamaño 13×18. Para garantizar la calidad del producto, el Tótem fotográfico Córdoba SelfieCam utiliza cámara fotográfica Canon y flash de estudio más una cortina de fondo que nos permite tener una iluminación correcta, sin sombras, capturando al detalle cada expresión. Esta característica nos diferencia de nuestra competencia que en su gran mayoría utilizan WebCam para la toma de las imágenes. En el caso de que estés decidiendo entre varios presupuestos debes tener en cuenta este detalle. Es imposible tener un buena impresión si la imagen digital es de baja calidad.</p>
+                                  <ul class="list-inline">
+                                      <li>
+                                        <strong>El servicio incluye:</strong>
+                                        2 hs. de servicio - Sesiones ilimitadas - Cotillón divertido y variado - Tamaño de foto 15x21 - Traslado del Totem Fotográfico - Fotos profesionales
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                      <i class="fas fa-xmark me-1"></i>
+                                      cerrar
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- services item 3 modal popup-->
+      <div class="services-modal modal fade" id="servicesModal3" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <div class="modal-body">
+                                  <!-- Project details-->
+                                  <h2 class="text-uppercase">plataforma 360</h2>
+                                  <img class="img-fluid d-block mx-auto" src="assets/img/360-modal.jpg" alt="..." />
+                                  <p>¿De qué se trata Selfie360 Córdoba?<br>
+                                    
+                                    Nuestro nuevo Selfie 360 Córdoba ofrece a los asistentes al evento una experiencia como ninguna otra. No solo la experiencia será inolvidable, sino que el contenido del video es único y perfecto para compartir en redes sociales. Además, como siempre ha hecho SelfieCam Córdoba, podemos ofrecer nuestro Selfie 360 a un precio accesible sin comprometer la calidad del servicio. 
+                                  </p>
+                                  <ul class="list-inline">
+                                      <li>
+                                          <strong>El servivio incluye:</strong>
+                                          Videos ilimitados durante 2 horas - Diseño personalizado del video - Cotillón divertido y variado - Te enviamos todos los videos por WhatsApp - Traslado y armado de la base Selfie 360 (CBA capital).
+                                      
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                      <i class="fas fa-xmark me-1"></i>
+                                      cerrar
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
